@@ -18,7 +18,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   console.log("we're connected");
 });
-
+const PORT = process.env.PORT || 3000;
 // initiate the blogSchema class
 var blogSchema = new mongoose.Schema({
 	title: String,
@@ -117,6 +117,6 @@ app.delete("/blogs/:id", function(req, res){
 })
 
 //listening server on port 3000
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
 	console.log("blog app server is running");
 })
