@@ -11,7 +11,8 @@ var methodOverride = require("method-override");
 app.use(methodOverride("_method"));
 // create database
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/restful_blog");
+// mongoose.connect("mongodb://localhost/restful_blog");
+mongoose.connect("mongodb://tia:coltsb520@ds151809.mlab.com:51809/restful_blog");
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
