@@ -1,5 +1,5 @@
 # Express-RESTful-Blog
-###### Web blog built with semantic-ui front-end, ExpressJS server & MongoDB back-end
+### Web blog designed with REST architecture
 
 ## Features
 - Responsive Web Design
